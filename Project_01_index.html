@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment 3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <style>
+      /* Reusable value */
+      :root {
+        --base-padding: 5px;
+        --my-shadow: drop-shadow(0 5px 12px #000);
+      }
+      body {
+        background-color: #0a3161;
+        background-image: url("images/PA_Landscape_ART.PNG");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+      /* Ensures image fits within it's parent container */
+      img {
+        width: 100%;
+        height: auto; /* Respect aspect ratio of image */
+      }
+      #site-header {
+        margin-top: 50px;
+        margin-bottom: 55px;
+        height: 200px;
+        filter: var(--my-shadow);
+        background-color: #dac777;
+        text-align: center;
+        font: normal 32px Impact;
+        color: #352b00;
+        border: solid 4px#352b00;
+      }
+      #site-footer {
+        padding: var(--base-padding);
+        margin-top: 50px;
+        height: 175px;
+        filter: var(--my-shadow);
+        background-color: #dac777;
+        text-align: center;
+        font: normal 32px Impact;
+        color: #352b00;
+      }
+
+      main {
+        max-width: 1920px;
+        background-color: #352b00;
+        margin: 0 auto;
+        filter: var(--my-shadow);
+        border-radius: 10px;
+        padding: var(--base-padding);
+      }
+
+      .row {
+        display: flex;
+        padding: 10px;
+        background-color: #dac777;
+        margin: 0 auto;
+        font: normal 20px arial; 
+        color: #352b00;
+        text-align: center;
+      }
+
+      .row > div {
+        min-height: 100px;
+        align-content: center;
+      }
+      .row.grow > div {
+        flex-grow: .5;
+        }
+      .col-33 {
+        width: 33.3%;
+        height: auto;
+        border: 1px solid #000;
+      }
+      .col-100 {
+        width: 100%;
+      }
+      .col-25 {
+        width: 25%;
+      }
+      .site-logo {
+       width: 15%;
+       height: 25%;
+      }
+      .h3{
+        color:#414141;
+        text-align: center;
+        font: bold 20px Arial, sans-serif;
+        background-color: #82cce2;
+        height:100px;
+      }
+      .a{
+        color: #352b00;
+        text-align: center;
+        font: bold 34px Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="site-header">
+        <div class="site-logo">
+          <div><img src="images/PA_Central_PA_LOGO.PNG" alt="LOGO PA central"></div>
+         </div>
+         <div class="site-header">
+         <h1>Come Explore the Heart of PA!</h1>
+      </div>
+    </header>
+    <main>
+      <div id="content">
+        <div class="row">
+          <div class="col-33">
+          <h2>Places for All Ages!</h2>
+           <a href="https://www.hersheypark.com/" target="_blank"title="Hershey Park Website"
+            >Hershey Park</a>
+          <div><img src="images/PA_Hershey_Park_ART.PNG" alt="art of Hershey Park" />
+            <p>A renowned amusement park featuring exciting rides, live entertainment,
+and an opportunity to learn about chocolate-making at Hershey's Chocolate World. </p>
+          <a href="https://www.rrmuseumpa.org" target="_blank"title="Railroad Museum of Pennsylvania Website"
+            >Railroad Museum of Pennsylvania</a>
+          <div><img src="images/PA_Railroad_Musesum_ART.PNG" alt="art of Railroad Musesum"/>
+            <p>Located in Strasburg, this museum boasts an
+extensive collection of vintage locomotives, rail cars, and exhibits, showcasing the rich
+history of railroading.</p>
+          <h2> Take a Stroll of Nature</h2>
+          <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark" target="_blank"title="Worlds End State Park Website"
+            >Worlds End State Park</a>
+          <div><img src="images/PA_End_of_World_Park_ART.PNG" alt="art of End of World Park"/>
+            <p>Situated in the Endless Mountains, this park is known for its
+rugged beauty, with hiking trails, waterfalls, and breathtaking views of the Loyalsock
+Creek Gorge.</p>
+          <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark" target="_blank"title="The Pennsylvania Grand Canyon Website"
+            >The Pennsylvania Grand Canyon</a>
+          <div><img src="images/PA_Grand_Canyon_ART.PNG" alt="art of Grand Canyon"/>
+            <p>Also known as Pine Creek Gorge, this natural
+wonder features stunning vistas, hiking trails, and opportunities for outdoor recreation.</p>
+          <h2> Let's go shopping!</h2>
+          <a href="https://www.centralmarketyork.com" target="_blank"title="Central Market York Website"
+            >Central Market York</a>
+          <img src="images/PA_Central_York_Market_ART.PNG" alt="art of Central York Market" />
+           <p>The oldest continuously operating farmers' market in the U.S.,
+offering a bustling atmosphere, local produce, crafts, and diverse food vendors.</p>
+          <a href="https://www.pacapitol.com/" target="_blank"title="Pennsylvania State Capitol Website"
+            >Pennsylvania State Capitol</a>
+          <img src="images/PA_Harrisburg_Capitol_ART.PNG" alt="art of Harrisburg Capitol"/>
+           <p>An impressive architectural gem in Harrisburg showcasing
+exquisite artwork, stunning interiors, and guided tours to learn about the state's
+government and history.</p>
+        </div>
+        </div>
+        </div>
+      </main>
+
+      <footer id="site-footer">
+        <div class="site-footer">
+        <div class="site-logo">
+        <div><img src="images/PA_Central_PA_LOGO.PNG" alt="LOGO PA central"></div>
+        </div>
+        <div class="h3">
+        <h3>Copyright © 2025 Central Pa Tourism. All Rights Reserved. Trademark Statement.
+        </h3>
+        </div>
+      </footer>
+  </body>
+</html>
